@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from './Components/SearchBar/LocationSearchBar';
 
 function App() {
+
   function SetUserInput(a: string) {
     "";    
   }
