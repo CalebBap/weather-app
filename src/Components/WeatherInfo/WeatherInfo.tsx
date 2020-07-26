@@ -48,10 +48,7 @@ function WeatherInfo(props: IWeatherInfo) {
         if(weather === "Thunderstorm" || weather === "Drizzle" || weather === "Rain" || weather === "Tornado"){
             // Dark bluish-gray
             bgColor = "#72757E";
-        }else if(weather === "Snow" || weather === "Ash" || weather === "Squall"){
-            // White
-            bgColor = "#FFFFFF";
-        }else if(weather === "Clouds" || weather === "Mist" || weather === "Smoke" || weather === "Haze" || weather === "Dust" || weather === "Fog"){
+        }else if(weather === "Snow" || weather === "Ash" || weather === "Squall" || weather === "Clouds" || weather === "Mist" || weather === "Smoke" || weather === "Haze" || weather === "Dust" || weather === "Fog"){
             // Light gray
             bgColor = "#BEBEBE";
         }else if(weather === "Sand"){
