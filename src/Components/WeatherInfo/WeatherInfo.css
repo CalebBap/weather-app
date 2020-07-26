@@ -1,8 +1,34 @@
+.WeatherInfoContainer{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+}
+
 #weather{
     font-size: 10em;
     color: #FFFFFF;
+    margin: 0;
 }
+
 #description{
     font-size: 2em;
     color: #FFFFFF;
+    margin: -1% 0 0 0;
+}
+
+#temp{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 2.5%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#humidity{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 2.5%;
+    color: #FFFFFF;
+    margin: 0;
 }

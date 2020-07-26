@@ -40,9 +40,9 @@ function WeatherInfo(props: IWeatherInfo) {
         const humidityNode = humidityRef.current;
 
         weatherNode!.textContent = weather;
-        descriptionNode!.textContent = response.weather[0].description;
-        tempNode!.textContent = (response.main.temp as number).toString();
-        humidityNode!.textContent = (response.main.humidity as number).toString();
+        descriptionNode!.textContent = "Weather description: " + response.weather[0].description;
+        tempNode!.textContent = (response.main.temp as number).toString() + "°C";
+        humidityNode!.textContent = (response.main.humidity as number).toString() + "% humidity";
         
         
         if(weather === "Thunderstorm" || weather === "Drizzle" || weather === "Rain" || weather === "Tornado"){
