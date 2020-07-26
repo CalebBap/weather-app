@@ -26,25 +26,29 @@ function LocationSearchBar(props: ISearchBarProps){
     }
 
     return(
-        <div className="SearchBarContainer">
-            <TextField
-                required
-                id="locationSearchBar"
-                label="Search location..."
-                variant="outlined"
-                error={HasFocus && SearchQuery === ""}  // red outline when TextField is in focus and empty 
-                onClick={() => setHasFocus(true)}
-                value={SearchQuery}
-                onChange={e => handleSearchQueryChange(e.target.value)}
-            />
+        <div className="headerContainer">
+            <h1>Find the current weather in </h1>
+
+            <div className="searchBarContainer">
+                <TextField
+                    required
+                    id="locationSearchBar"
+                    label=""
+                    variant="standard"
+                    error={HasFocus && SearchQuery === ""}  // red outline when TextField is in focus and empty 
+                    onClick={() => setHasFocus(true)}
+                    value={SearchQuery}
+                    onChange={e => handleSearchQueryChange(e.target.value)}
+                />
+            </div>
 
             <Button
                 id="queryBttn"
-                variant="contained"
-                color="secondary"
+                variant="outlined"
+                color="default"
                 onClick={handleQuery}>
-                    Submit
-             </Button>
+                    Search
+            </Button>
         </div>
     );
 }

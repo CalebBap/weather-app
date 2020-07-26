@@ -1,8 +1,29 @@
-.SearchBarContainer{
+.headerContainer{
+    display: inline-flex;
+    align-items: flex-end;
     margin-top: 1%;
 }
 
+h1{
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.searchBarContainer{
+    float: center;
+    width: 22%;
+}
+
+#locationSearchBar{
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
 #queryBttn{
-    margin-left: 1%;
-    margin-top: 0.5%;
+    float: right;
+    color: black;
+    height: 40px;
+    margin-left: 15px;;
 }
