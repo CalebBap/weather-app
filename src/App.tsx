@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import SearchBar from './Components/SearchBar/LocationSearchBar';
-import WeatherGrid from './Components/WeatherGrid/WeatherGrid';
+import WeatherInfo from './Components/WeatherInfo/WeatherInfo';
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App" >
       <SearchBar SetUserInput={(a: string) => SetUserInput(a)}/>
-      <WeatherGrid SearchQuery={UserInput}/>
+      <WeatherInfo SearchQuery={UserInput}/>
     </div>
   );
 }

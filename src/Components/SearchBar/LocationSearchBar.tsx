@@ -30,7 +30,7 @@ function LocationSearchBar(props: ISearchBarProps){
             <TextField
                 required
                 id="locationSearchBar"
-                label="Search location"
+                label="Search location..."
                 variant="outlined"
                 error={HasFocus && SearchQuery === ""}  // red outline when TextField is in focus and empty 
                 onClick={() => setHasFocus(true)}
